@@ -2,6 +2,7 @@ const express = require("express");
 const app = express()
 const PORT = 5000
 const connectDB = require("./db");
+app.use(express.json())
 
 const server = app.listen(PORT, () => {
     console.log(`Server COnnected to port ${PORT}`)
