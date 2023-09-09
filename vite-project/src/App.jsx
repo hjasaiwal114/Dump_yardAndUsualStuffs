@@ -13,23 +13,27 @@ import './App.css'
 // id: 1
 // },]
 
-let todo = {
-  title: "go to gym",
-  description: "go to gym1",
-  id: 1
-}
-
 function App() {
-  
 
   return (
-    <>
-      <h5>Hi there</h5>
-      {todo.title}
-      {todo.description}
-      {todo.id}
-    </>
+    <div>
+      <HelloWorldComponent></HelloWorldComponent>
+      <HelloWorldComponent2></HelloWorldComponent2>
+    </div>
   )
+
+}
+
+function HelloWorldComponent() {
+  return <div>
+    hello world
+  </div>
+}
+
+function HelloWorldComponent() {
+  return <div>
+    hello world 2
+  </div>
 }
 
 export default App
